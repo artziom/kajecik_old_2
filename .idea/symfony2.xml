@@ -6,5 +6,10 @@
     <option name="directoryToApp" value="application" />
     <option name="pluginEnabled" value="true" />
     <option name="profilerCsvPath" value="" />
+    <option name="twigNamespaces">
+      <list>
+        <twig_namespace custom="true" namespaceType="ADD_PATH" path="application/templates" />
+      </list>
+    </option>
   </component>
 </project>
