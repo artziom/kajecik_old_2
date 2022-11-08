@@ -1,0 +1,19 @@
+services:
+  database:
+    image: postgres
+    env_file:
+      - docker/env/project.env
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: docker/dockerfile/php-fpm
+    env_file:
+      - docker/env/project.env
+    volumes:
+      - ./backend:/backend
+    working_dir: /backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
