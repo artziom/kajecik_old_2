@@ -6,6 +6,9 @@ services:
     ports:
       - "5432:5432"
 
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+
   app:
     build: docker/dockerfile/php-fpm
     env_file:
@@ -23,3 +26,10 @@ services:
     volumes:
       - ./application:/application
     working_dir: /application
+
+volumes:
+  db-data:
+
+networks:
+  default:
+    name: network
