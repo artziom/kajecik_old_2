@@ -17,3 +17,9 @@ services:
       - "8000:8000"
     depends_on:
       - database
+
+  node:
+    image: node
+    volumes:
+      - ./application:/application
+    working_dir: /application

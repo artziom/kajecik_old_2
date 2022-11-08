@@ -141,6 +141,7 @@
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/data-fixtures" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/webpack-encore-bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
