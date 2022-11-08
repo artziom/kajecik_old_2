@@ -12,7 +12,7 @@ services:
       - docker/env/project.env
     volumes:
       - ./application:/application
-    working_dir: /backend
+    working_dir: /application
     ports:
       - "8000:8000"
     depends_on:
