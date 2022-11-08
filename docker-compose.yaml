@@ -6,12 +6,12 @@ services:
     ports:
       - "5432:5432"
 
-  backend:
+  app:
     build: docker/dockerfile/php-fpm
     env_file:
       - docker/env/project.env
     volumes:
-      - ./backend:/backend
+      - ./application:/application
     working_dir: /backend
     ports:
       - "8000:8000"
