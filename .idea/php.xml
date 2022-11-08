@@ -138,6 +138,8 @@
       <path value="$PROJECT_DIR$/application/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/application/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/application/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/application/vendor/symfony/rate-limiter" />
+      <path value="$PROJECT_DIR$/application/vendor/symfony/lock" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
