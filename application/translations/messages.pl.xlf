@@ -5,6 +5,10 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="fA8Iu0C" resname="label.tasks">
+        <source>label.tasks</source>
+        <target>Zadania</target>
+      </trans-unit>
       <trans-unit id="LDhDPrF" resname="label.username">
         <source>label.username</source>
         <target>Nazwa użytkownika</target>
