@@ -21,6 +21,10 @@
         <source>label.login</source>
         <target>Login</target>
       </trans-unit>
+      <trans-unit id="fA8Iu0C" resname="label.tasks">
+        <source>label.tasks</source>
+        <target>Tasks</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
