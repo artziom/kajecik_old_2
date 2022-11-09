@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block cardTitle %}Login{% endblock %}
+{% block cardTitle %}{% trans %}label.login{% endtrans %}{% endblock %}
 
 {% block cardBody %}
     <form action="{{ path('app_login') }}" method="post">
