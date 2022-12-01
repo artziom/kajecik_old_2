@@ -1,7 +1,38 @@
 {% extends 'base.html.twig' %}
 
 {% block cardBody %}
-    <ul>
-        <li><a href="#">{% trans %}label.tasks{% endtrans %}</a></li>
-    </ul>
+    {% for budget in budgets %}
+        <div class="card text-bg-light mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ budget.name }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <table class="table table-light">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for resource in budget.financialResources %}
+                        <tr>
+                            <td>
+                                {{ resource.name }}
+                            </td>
+                            <td>
+                                {{ resource.amount }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endfor %}
+    <div class="card text-bg-light mb-3">
+        <div class="card-body">
+            <a href="#">{% trans %}label.create_new{% endtrans %}</a>
+        </div>
+    </div>
 {% endblock %}
