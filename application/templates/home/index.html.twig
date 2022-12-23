@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block cardBody %}
-    {% for budget in budgets %}
+    {% for budgetSummary in budgetSummaries %}
         <div class="card text-bg-light mb-3">
             <div class="card-body">
-                <h5 class="card-title">{{ budget.name }}</h5>
+                <h5 class="card-title">{{ budgetSummary.budget.name }} {{ budgetSummary.dateFrom|date('Y-m-d') }}
+                    - {{ budgetSummary.dateTo|date('Y-m-d') }}</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
                 <table class="table table-light">
@@ -15,7 +16,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {% for resource in budget.financialResources %}
+                    {% for resource in budgetSummary.budget.financialResources %}
                         <tr>
                             <td>
                                 {{ resource.name }}
